@@ -1,0 +1,103 @@
+<html>
+
+    <head>
+    
+        <title>Contextual Color Demo</title>
+    
+        <meta charset="utf-8" />
+        <style>
+        
+        
+        @font-face {
+            font-family: "Megabase Web";
+            src: url('fonts/MegabaseColorVariable-VF.woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Megabase Web";
+            font-size: 8rem;
+            line-height: 1em;
+            margin: 0;
+		font-variation-settings: 'slnt'  0;
+        }
+        
+        section {
+            overflow: hidden;
+            height: 23rem;
+            padding: 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        
+        p {
+            margin: 0 0 0 20px;
+            width: 150%;
+        }
+        
+        @font-palette-values --light-mode {
+            font-family: "Megabase Web;
+            base-palette: 0;
+        }
+
+        @font-palette-values --dark-mode {
+            font-family: "Megabase Web";
+            base-palette: 1;
+	}
+
+        #one {
+	background: #ccc;
+         color: red;
+        }
+        
+
+	#two  {
+		background: #222;
+		font-palette: --dark-mode;
+	
+         color: aqua;
+	}
+
+	#three  {
+		background: #fff;
+		font-palette: --light-mode;
+	
+         color: red;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		#three {
+		background: #222;
+		color: #fff;
+		font-palette: --dark-mode;
+		color: aqua;
+	}
+}
+
+
+
+
+
+        </style>
+    </head>
+    
+    <body>
+    
+    
+    <section id="one">
+        <p>They were just sucked into space. I can't. As much as I care about you, my first duty is to the ship. Yesterday I did not know how to eat gagh. Mr. Worf, you do remember how to fire phasers? Besides, you look good in a dress. Our neural pathways have become accustomed to your sensory input patterns. A lot of things can change in twelve years, Admiral. I am your worst nightmare! Wait a minute - you've been declared dead. You can't give orders around here. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules. You did exactly what you had to do. You considered all your options, you tried every alternative and then you made the hard choice.</p>
+    </section>
+
+    
+    <section id="two">
+        <p>They were just sucked into space. I can't. As much as I care about you, my first duty is to the ship. Yesterday I did not know how to eat gagh. Mr. Worf, you do remember how to fire phasers? Besides, you look good in a dress. Our neural pathways have become accustomed to your sensory input patterns. A lot of things can change in twelve years, Admiral. I am your worst nightmare! Wait a minute - you've been declared dead. You can't give orders around here. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules. You did exactly what you had to do. You considered all your options, you tried every alternative and then you made the hard choice.</p>
+    </section>
+
+    <section id="three">
+        <p>They were just sucked into space. I can't. As much as I care about you, my first duty is to the ship. Yesterday I did not know how to eat gagh. Mr. Worf, you do remember how to fire phasers? Besides, you look good in a dress. Our neural pathways have become accustomed to your sensory input patterns. A lot of things can change in twelve years, Admiral. I am your worst nightmare! Wait a minute - you've been declared dead. You can't give orders around here. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules. You did exactly what you had to do. You considered all your options, you tried every alternative and then you made the hard choice.</p>
+    </section>
+
+    </body>
+
+</html>

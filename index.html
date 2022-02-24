@@ -58,10 +58,15 @@
 
         @font-palette-values --default {
             font-family: "Bradley Initials DJR Web";
+            base-palette: 0;
+        }
+
+        @font-palette-values --light-mode {
+            font-family: "Bradley Initials DJR Web";
             base-palette: 1;
         }
 
-        @font-palette-values --black-and-white {
+        @font-palette-values --dark-mode {
             font-family: "Bradley Initials DJR Web";
             base-palette: 2;
         }
@@ -84,6 +89,7 @@
         @font-palette-values --lilac-blossom {
             font-family: "Bradley Initials DJR Web";
             base-palette: 7;
+            override-colors: 0 #fff, 1 #F3B0EB, 2 #d172c0, 3 #821B70, 4 #F3B0EB;
         }
 
         @font-palette-values --seafoam {
@@ -98,8 +104,8 @@
         
         
         #two {
-        background: #F3B0EB; 
-        color: #821B70;
+        color: #fff; 
+        background: #821B70;
         }
         #two div {
             font-size: 20rem;
@@ -113,10 +119,36 @@
         
         #three {
             font-palette: --bumble-bee;
-            background: yellow;
+            background: #f6f6f6ff;
             font-size: 8rem;
             line-height: .9em;
         }
+
+
+	#four  {
+		background: #ddd;
+		font-palette: --light-mode;
+
+		color: #000;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		#four {
+		background: #222;
+		color: #fff;
+		font-palette: --dark-mode;
+	}
+}
+
+	#four  div {
+	
+		font-family: "Bradley Initials DJR Web";
+		width: 200%;
+		font-size: 20rem;
+		line-height: 90%;
+	}
+
+
 
 
         </style>
@@ -136,6 +168,11 @@
     
     <section id="three">
         <p>THIS answer so angered the Queen that she became quite yellow with envy. From that hour, whenever she saw Snow-White, her heart was hardened against her, and she hated the little girl. Her envy and jealousy increased so that she had no rest day or night, and she said to a Huntsman, "Take the child away into the forest. I will never look upon her again. You must kill her, and bring me her heart and tongue for a token." The Huntsman listened and took the maiden away, but when he drew out his knife to kill her, she began to cry, saying, "Ah, dear Huntsman, give me my life! I will run into the wild forest, and never come home again."</p>
+    </section>
+
+    
+    <section id="four">
+	<div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
     </section>
     
     </body>
