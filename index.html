@@ -35,11 +35,30 @@
             padding: 20px 0 0 0;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
+            position: relative;
+        }
+        
+        .label {
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            font-family: "Courier", monospaced;
+            font-size: 12px;
+            line-height: 12px;
+            padding: .25rem .5rem ;
+            z-index: 2;
+            color: #fff;
+            background: #444;
+            height: 1rem;
+            border: 1px solid black;
         }
         
         p {
             margin: 0 0 0 20px;
             width: 150%;
+        }
+        figure {
+            margin: 0;
         }
         
         p::first-letter {
@@ -107,7 +126,7 @@
         color: #fff; 
         background: #821B70;
         }
-        #two div {
+        #two figure {
             font-size: 20rem;
             line-height: 85%;
             font-palette: --lilac-blossom;
@@ -140,7 +159,7 @@
 	}
 }
 
-	#four  div {
+	#four  figure {
 	
 		font-family: "Bradley Initials DJR Web";
 		width: 200%;
@@ -159,20 +178,28 @@
     
     <section id="one">
         <p>ONCE upon a time in the middle of winter, when the flakes of snow were falling like feathers from the clouds, a Queen sat at her palace window, which had an ebony black frame, stitching her husband's shirts. While she was thus engaged and looking out at the snow she pricked her finger, and three drops of blood fell upon the snow. Now the red looked so well upon the white that she thought to herself, “Oh, that I had a child as white as this snow, as red as this blood, and as black as the wood of this frame!” Soon afterwards a little daughter came to her, who was as white as snow, and with cheeks as red as blood, and with hair as black as ebony, and from this she was named "Snow-White." And at the same time her mother died.</p>
+        <div class="label">Default palette</div>
     </section>
     
     
     <section id="two">
-        <div><span class="drop">T</span>he <span class="drop">R</span>ound <span class="drop">T</span>able</div>
+        <figure>
+            <span class="drop">T</span>he 
+            <span class="drop">R</span>ound 
+            <span class="drop">T</span>able
+        </figure>
+        <div class="label">Customized palette</div>
     </section>
     
     <section id="three">
         <p>THIS answer so angered the Queen that she became quite yellow with envy. From that hour, whenever she saw Snow-White, her heart was hardened against her, and she hated the little girl. Her envy and jealousy increased so that she had no rest day or night, and she said to a Huntsman, "Take the child away into the forest. I will never look upon her again. You must kill her, and bring me her heart and tongue for a token." The Huntsman listened and took the maiden away, but when he drew out his knife to kill her, she began to cry, saying, "Ah, dear Huntsman, give me my life! I will run into the wild forest, and never come home again."</p>
+        <div class="label">Alternate palette</div>
     </section>
 
     
     <section id="four">
-	<div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+	<figure>ABCDEFGHIJKLMNOPQRSTUVWXYZ</figure>
+	    <div class="label">prefers-color-scheme</div>
     </section>
     
     </body>
